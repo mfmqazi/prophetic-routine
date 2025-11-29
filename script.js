@@ -1,3 +1,5 @@
+import { propheticRoutine, shamailChapters } from './data.js';
+
 document.addEventListener('DOMContentLoaded', () => {
     const timelineContainer = document.querySelector('.timeline-container');
     const shamailGrid = document.querySelector('.shamail-grid');
@@ -21,27 +23,25 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Render Timeline
-    if (typeof propheticRoutine !== 'undefined') {
-        propheticRoutine.forEach((item, index) => {
-            const timelineItem = document.createElement('div');
-            timelineItem.classList.add('timeline-item');
-            timelineItem.classList.add(getItemClass(item)); // Add dynamic color class
+    propheticRoutine.forEach((item, index) => {
+        const timelineItem = document.createElement('div');
+        timelineItem.classList.add('timeline-item');
+        timelineItem.classList.add(getItemClass(item)); // Add dynamic color class
 
-            timelineItem.innerHTML = `
-                <div class="timeline-dot"></div>
-                <div class="timeline-content" data-id="${item.id}">
-                    <span class="time-badge">${item.time}</span>
-                    <h3 class="timeline-title">${item.title}</h3>
-                    <p class="timeline-preview">${item.preview}</p>
-                </div>
-            `;
+        timelineItem.innerHTML = `
+            <div class="timeline-dot"></div>
+            <div class="timeline-content" data-id="${item.id}">
+                <span class="time-badge">${item.time}</span>
+                <h3 class="timeline-title">${item.title}</h3>
+                <p class="timeline-preview">${item.preview}</p>
+            </div>
+        `;
 
-            timelineContainer.appendChild(timelineItem);
-        });
-    }
+        timelineContainer.appendChild(timelineItem);
+    });
 
     // Render Shamail Grid
-    if (typeof shamailChapters !== 'undefined' && shamailGrid) {
+    if (shamailGrid) {
         shamailChapters.forEach(chapter => {
             const card = document.createElement('div');
             card.className = 'shamail-card';

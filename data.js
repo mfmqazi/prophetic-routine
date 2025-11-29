@@ -1,4 +1,4 @@
-const propheticRoutine = [
+export const propheticRoutine = [
     {
         id: 1,
         time: "Last Third of the Night",
@@ -201,7 +201,7 @@ const propheticRoutine = [
     }
 ];
 
-const shamailChapters = [
+export const shamailChapters = [
     {
         id: "physical",
         title: "Physical Description",
