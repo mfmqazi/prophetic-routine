@@ -263,3 +263,271 @@ export const shamailChapters = [
         hadith: "Aisha (RA) asked him why he prayed so much when his sins were forgiven. He replied: 'Shall I not be a grateful slave?' (Shamail 258)"
     }
 ];
+
+export const commonSurahs = [
+    {
+        name: "Surah Al-Mulk",
+        time: "Every Night",
+        benefit: "Protection from the punishment of the grave.",
+        hadithRef: "Jami` at-Tirmidhi 2891"
+    },
+    {
+        name: "Surah As-Sajdah",
+        time: "Every Night",
+        benefit: "The Prophet (PBUH) would not sleep until he recited it.",
+        hadithRef: "Jami` at-Tirmidhi 3404"
+    },
+    {
+        name: "Surah Al-Kahf",
+        time: "Every Friday",
+        benefit: "Illuminates a light between the two Fridays.",
+        hadithRef: "Al-Mustadrak 2/399"
+    },
+    {
+        name: "Surah Yasin",
+        time: "Morning / Night",
+        benefit: "Often called the 'Heart of the Quran'. Reciting it at night seeking Allah's pleasure brings forgiveness.",
+        hadithRef: "Sahih Ibn Hibban 2574"
+    },
+    {
+        name: "Surah Al-Waqiah",
+        time: "Every Night",
+        benefit: "Protection from poverty and need.",
+        hadithRef: "Shu'ab al-Iman 2269"
+    },
+    {
+        name: "Surah Al-Ikhlas, Al-Falaq, An-Nas",
+        time: "Morning & Evening (3x)",
+        benefit: "Suffices for everything (protection from all harm).",
+        hadithRef: "Jami` at-Tirmidhi 3575"
+    },
+    {
+        name: "Ayat al-Kursi",
+        time: "After every Prayer & Before Sleep",
+        benefit: "Protection from Shaytan; nothing stands between the reciter and Paradise except death.",
+        hadithRef: "Sahih al-Bukhari 2311"
+    }
+];
+
+export const hadithLibrary = {
+    "Sahih al-Bukhari 183": {
+        arabic: "عَنِ ابْنِ عَبَّاسٍ رَضِيَ اللَّهُ عَنْهُمَا، قَالَ: بِتُّ عِنْدَ خَالَتِي مَيْمُونَةَ... فَاسْتَيْقَظَ رَسُولُ اللَّهِ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ، فَجَلَسَ يَمْسَحُ النَّوْمَ عَنْ وَجْهِهِ بِيَدِهِ، ثُمَّ قَرَأَ الْعَشْرَ الْآيَاتِ الْخَوَاتِمَ مِنْ سُورَةِ آلِ عِمْرَانَ...",
+        english: "Narrated Ibn 'Abbas: I stayed overnight in the house of my aunt Maimuna... The Messenger of Allah (PBUH) woke up, sat up and wiped the sleep from his face with his hand. Then he recited the last ten verses of Surah Ali 'Imran..."
+    },
+    "Sahih al-Bukhari 245": {
+        arabic: "عَنْ حُذَيْفَةَ، قَالَ: كَانَ النَّبِيُّ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ إِذَا قَامَ مِنَ اللَّيْلِ، يَشُوصُ فَاهُ بِالسِّوَاكِ",
+        english: "Narrated Hudhaifa: Whenever the Prophet (PBUH) got up at night, he used to clean his mouth with Siwak."
+    },
+    "Sahih al-Bukhari 1147": {
+        arabic: "عَنْ عَائِشَةَ رَضِيَ اللَّهُ عَنْهَا، قَالَتْ: كَانَ رَسُولُ اللَّهِ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ يُصَلِّي مِنَ اللَّيْلِ إِحْدَى عَشْرَةَ رَكْعَةً...",
+        english: "Narrated 'Aisha: The Messenger of Allah (PBUH) used to pray eleven Rak'ahs at night..."
+    },
+    "Sahih al-Bukhari 6312": {
+        arabic: "عَنْ حُذَيْفَةَ بْنِ الْيَمَانِ، قَالَ: كَانَ النَّبِيُّ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ إِذَا أَوَى إِلَى فِرَاشِهِ قَالَ: «بِاسْمِكَ أَمُوتُ وَأَحْيَا»، وَإِذَا قَامَ قَالَ: «الْحَمْدُ لِلَّهِ الَّذِي أَحْيَانَا بَعْدَ مَا أَمَاتَنَا وَإِلَيْهِ النُّشُورُ»",
+        english: "Narrated Hudhaifa: When the Prophet (PBUH) went to bed, he would say: 'Bismika amutu wa ahya.' And when he got up he would say: 'Al-hamdu lillaahi alladhee ahyaanaa ba'da maa amaatanaa wa ilayhin-nushoor.'"
+    },
+    "Sahih Muslim 772": {
+        arabic: "عَنْ حُذَيْفَةَ، قَالَ: صَلَّيْتُ مَعَ النَّبِيِّ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ ذَاتَ لَيْلَةٍ، فَافْتَتَحَ الْبَقَرَةَ... ثُمَّ افْتَتَحَ النِّسَاءَ فَقَرَأَهَا، ثُمَّ افْتَتَحَ آلَ عِمْرَانَ فَقَرَأَهَا...",
+        english: "Hudhaifa reported: I prayed with the Prophet (PBUH) one night. He started reciting Surah Al-Baqarah... then he started An-Nisa and recited it, then he started Ali 'Imran and recited it..."
+    },
+    "Shamail al-Tirmidhi 332": {
+        arabic: "عَنْ عَائِشَةَ، قَالَتْ: «كَانَ فِرَاشُ رَسُولِ اللهِ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ مِنْ أَدَمٍ حَشْوُهُ لِيفٌ»",
+        english: "Aisha reported: 'The bedding of the Messenger of Allah (PBUH) was made of leather stuffed with palm fiber.'"
+    },
+    "Sahih al-Bukhari 626": {
+        arabic: "عَنْ عَائِشَةَ رَضِيَ اللَّهُ عَنْهَا، قَالَتْ: «كَانَ النَّبِيُّ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ يُصَلِّي رَكْعَتَيْنِ خَفِيفَتَيْنِ بَيْنَ النِّدَاءِ وَالْإِقَامَةِ مِنْ صَلَاةِ الصُّبْحِ»",
+        english: "Narrated 'Aisha: The Prophet (PBUH) used to pray two light Rak'ahs between the Adhan and the Iqama of the Fajr prayer."
+    },
+    "Sahih Muslim 670": {
+        arabic: "عَنْ جَابِرِ بْنِ سَمُرَةَ، أَنَّ النَّبِيَّ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ كَانَ إِذَا صَلَّى الْفَجْرَ جَلَسَ فِي مُصَلَّاهُ حَتَّى تَطْلُعَ الشَّمْسُ حَسَنًا",
+        english: "Jabir bin Samurah reported: When the Prophet (PBUH) prayed Fajr, he would sit in his place of prayer until the sun rose brightly."
+    },
+    "Sahih al-Bukhari 731": {
+        arabic: "عَنْ زَيْدِ بْنِ ثَابِتٍ: «فَعَلَيْكُمْ بِالصَّلاَةِ فِي بُيُوتِكُمْ، فَإِنَّ خَيْرَ صَلاَةِ المَرْءِ فِي بَيْتِهِ إِلَّا الصَّلاَةَ المَكْتُوبَةَ»",
+        english: "Narrated Zaid bin Thabit: 'You should pray in your houses, for the best prayer of a person is that which he prays in his house except the compulsory prayers.'"
+    },
+    "Sahih Muslim 763": {
+        arabic: "عَنِ ابْنِ عَبَّاسٍ... «اللَّهُمَّ اجْعَلْ فِي قَلْبِي نُورًا، وَفِي بَصَرِي نُورًا، وَفِي سَمْعِي نُورًا...»",
+        english: "Ibn 'Abbas reported... 'O Allah, place light in my heart, light in my sight, light in my hearing...'"
+    },
+    "Sahih Muslim 726": {
+        arabic: "عَنْ أَبِي هُرَيْرَةَ، أَنَّ رَسُولَ اللهِ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ قَرَأَ فِي رَكْعَتَيِ الْفَجْرِ: {قُلْ يَا أَيُّهَا الْكَافِرُونَ}، وَ {قُلْ هُوَ اللهُ أَحَدٌ}",
+        english: "Abu Huraira reported that the Messenger of Allah (PBUH) recited in the two Rak'ahs of Fajr: 'Say: O Unbelievers' (Surah Al-Kafirun) and 'Say: He is Allah, the One' (Surah Al-Ikhlas)."
+    },
+    "Sahih al-Bukhari 541": {
+        arabic: "عَنْ سَيَّارِ بْنِ سَلاَمَةَ... «وَكَانَ يَقْرَأُ فِي الْمَغْرِبِ بِقِصَارِ الْمُفَصَّلِ، وَفِي الْعِشَاءِ بِوَسَطِهَا، وَفِي الصُّبْحِ بِطِوَالِهَا»",
+        english: "Narrated Sayyar bin Salama... 'He used to recite the short Mufassal Surahs in Maghrib, the medium ones in Isha, and the long ones in Fajr.'"
+    },
+    "Sunan Abi Dawud 4850": {
+        arabic: "عَنْ جَابِرِ بْنِ سَمُرَةَ، قَالَ: «كَانَ النَّبِيُّ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ إِذَا صَلَّى الْفَجْرَ تَرَبَّعَ فِي مَجْلِسِهِ حَتَّى تَطْلُعَ الشَّمْسُ حَسَنَاءَ»",
+        english: "Jabir bin Samurah said: 'When the Prophet (PBUH) prayed Fajr, he would sit cross-legged in his place until the sun rose brightly.'"
+    },
+    "Sahih al-Bukhari 7047": {
+        arabic: "عَنْ سَمُرَةَ بْنِ جُنْدُبٍ، قَالَ: كَانَ رَسُولُ اللَّهِ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ مِمَّا يُكْثِرُ أَنْ يَقُولَ لِأَصْحَابِهِ: «هَلْ رَأَى أَحَدٌ مِنْكُمْ مِنْ رُؤْيَا»",
+        english: "Narrated Samura bin Jundub: The Messenger of Allah (PBUH) used to ask his companions very often, 'Has anyone of you seen a dream?'"
+    },
+    "Sahih Muslim 2326": {
+        arabic: "عَنْ أَنَسِ بْنِ مَالِكٍ... كَانَتِ الْأَمَةُ مِنْ إِمَاءِ أَهْلِ الْمَدِينَةِ لَتَأْخُذُ بِيَدِ رَسُولِ اللهِ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ فَتَنْطَلِقُ بِهِ حَيْثُ شَاءَتْ",
+        english: "Anas bin Malik reported: 'A slave-girl of Madinah would take the hand of the Messenger of Allah (PBUH) and lead him wherever she wished (to help her).'"
+    },
+    "Sahih al-Bukhari 6072": {
+        arabic: "عَنْ أَنَسٍ رَضِيَ اللَّهُ عَنْهُ: «إِنْ كَانَتِ الأَمَةُ مِنْ إِمَاءِ أَهْلِ المَدِينَةِ، لَتَأْخُذُ بِيَدِ رَسُولِ اللَّهِ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ، فَتَنْطَلِقُ بِهِ حَيْثُ شَاءَتْ»",
+        english: "Narrated Anas: 'Any female slave of Madinah could take hold of the hand of Allah's Messenger (PBUH) and take him wherever she wished.'"
+    },
+    "Sahih al-Bukhari 2739": {
+        arabic: "عَنْ عُقْبَةَ بْنِ الْحَارِثِ... «صَلَّيْتُ وَرَاءَ النَّبِيِّ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ بِالمَدِينَةِ العَصْرَ، فَسَلَّمَ، ثُمَّ قَامَ مُسْرِعًا... كَانَ شَيْءٌ مِنَ التِّبْرِ الصَّدَقَةِ»",
+        english: "Narrated 'Uqba bin Al-Harith: 'I prayed the 'Asr prayer behind the Prophet (PBUH)... he got up immediately... (saying) 'I left at home a piece of gold (charity) so I disliked to let it remain.'"
+    },
+    "Sahih Muslim 2723": {
+        arabic: "عَنْ أَبِي هُرَيْرَةَ، قَالَ: كَانَ رَسُولُ اللهِ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ يَقُولُ حِينَ يُصْبِحُ: «اللَّهُمَّ بِكَ أَصْبَحْنَا، وَبِكَ أَمْسَيْنَا...»",
+        english: "Abu Huraira reported: The Messenger of Allah (PBUH) used to say in the morning: 'O Allah, by You we enter the morning, and by You we enter the evening...'"
+    },
+    "Sahih Muslim 719": {
+        arabic: "عَنْ عَائِشَةَ، قَالَتْ: «كَانَ رَسُولُ اللهِ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ يُصَلِّي الضُّحَى أَرْبَعًا، وَيَزِيدُ مَا شَاءَ اللهُ»",
+        english: "Aisha reported: 'The Messenger of Allah (PBUH) used to pray four Rak'ahs of Duha and increase as Allah willed.'"
+    },
+    "Sahih Muslim 720": {
+        arabic: "عَنْ أَبِي ذَرٍّ... «يُصْبِحُ عَلَى كُلِّ سُلَامَى مِنْ أَحَدِكُمْ صَدَقَةٌ... وَيُجْزِئُ مِنْ ذَلِكَ رَكْعَتَانِ يَرْكَعُهُمَا مِنَ الضُّحَى»",
+        english: "Abu Dharr reported... 'Charity is due upon every joint of the body... and two Rak'ahs of Duha suffice for that.'"
+    },
+    "Sahih Al-Jami 4431": {
+        arabic: "«قِيلُوا فَإِنَّ الشَّيَاطِينَ لَا تَقِيلُ»",
+        english: "The Prophet (PBUH) said: 'Take a midday nap (Qaylulah), for the devils do not take a midday nap.'"
+    },
+    "Sahih al-Bukhari 876": {
+        arabic: "عَنْ عَبْدِ اللَّهِ بْنِ مُغَفَّلٍ: «بَيْنَ كُلِّ أَذَانَيْنِ صَلاَةٌ... لِمَنْ شَاءَ»",
+        english: "Narrated Abdullah bin Mughaffal: 'Between every two Adhans (Adhan and Iqama) there is a prayer... for whoever wishes.'"
+    },
+    "Sahih al-Bukhari 1180": {
+        arabic: "عَنِ ابْنِ عُمَرَ: «حَفِظْتُ مِنَ النَّبِيِّ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ عَشْرَ رَكَعَاتٍ: رَكْعَتَيْنِ قَبْلَ الظُّهْرِ، وَرَكْعَتَيْنِ بَعْدَهَا...»",
+        english: "Narrated Ibn 'Umar: 'I memorized from the Prophet (PBUH) ten Rak'ahs: two before Zuhr, two after it...'"
+    },
+    "Sahih al-Bukhari 759": {
+        arabic: "عَنْ أَبِي مَعْمَرٍ... «كُنَّا نَعْرِفُ قِرَاءَةَ النَّبِيِّ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ فِي الظُّهْرِ وَالعَصْرِ بِاضْطِرَابِ لِحْيَتِهِ»",
+        english: "Narrated Abu Ma'mar... 'We used to know the recitation of the Prophet (PBUH) in Zuhr and Asr by the movement of his beard.'"
+    },
+    "Jami` at-Tirmidhi 430": {
+        arabic: "عَنِ ابْنِ عُمَرَ، قَالَ: قَالَ رَسُولُ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ: «رَحِمَ اللَّهُ امْرَأً صَلَّى قَبْلَ العَصْرِ أَرْبَعًا»",
+        english: "Ibn 'Umar reported: The Messenger of Allah (PBUH) said: 'May Allah have mercy on a person who prays four Rak'ahs before Asr.'"
+    },
+    "Sahih al-Bukhari 586": {
+        arabic: "عَنْ أَبِي هُرَيْرَةَ: «نَهَى رَسُولُ اللَّهِ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ عَنْ صَلاَتَيْنِ: بَعْدَ الفَجْرِ حَتَّى تَطْلُعَ الشَّمْسُ، وَبَعْدَ العَصْرِ حَتَّى تَغْرُبَ الشَّمْسُ»",
+        english: "Narrated Abu Huraira: 'The Messenger of Allah (PBUH) forbade two prayers: after Fajr until the sun rises, and after Asr until the sun sets.'"
+    },
+    "Sahih al-Bukhari 3616": {
+        arabic: "عَنِ ابْنِ عَبَّاسٍ: «أَنَّ النَّبِيَّ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ دَخَلَ عَلَى أَعْرَابِيٍّ يَعُودُهُ، وَكَانَ إِذَا دَخَلَ عَلَى مَرِيضٍ يَعُودُهُ قَالَ: لاَ بَأْسَ، طَهُورٌ إِنْ شَاءَ اللَّهُ»",
+        english: "Narrated Ibn 'Abbas: 'The Prophet (PBUH) visited a Bedouin... Whenever he visited a sick person, he would say: 'No harm, (it will be a) purification (from sins), if Allah wills.''"
+    },
+    "Sahih al-Bukhari 5268": {
+        arabic: "عَنْ عَائِشَةَ: «كَانَ رَسُولُ اللَّهِ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ إِذَا انْصَرَفَ مِنَ العَصْرِ دَخَلَ عَلَى نِسَائِهِ»",
+        english: "Narrated 'Aisha: 'Whenever the Messenger of Allah (PBUH) finished the 'Asr prayer, he would enter upon his wives.'"
+    },
+    "Sahih al-Bukhari 101": {
+        arabic: "عَنْ أَبِي سَعِيدٍ: «جَاءَتِ امْرَأَةٌ إِلَى رَسُولِ اللَّهِ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ فَقَالَتْ: يَا رَسُولَ اللَّهِ، ذَهَبَ الرِّجَالُ بِحَدِيثِكَ، فَاجْعَلْ لَنَا مِنْ نَفْسِكَ يَوْمًا...»",
+        english: "Narrated Abu Sa'id: 'A woman came to the Messenger of Allah (PBUH) and said: 'O Allah's Messenger! Men have taken all your time, so appoint a day for us...''"
+    },
+    "Sahih al-Bukhari 560": {
+        arabic: "عَنْ رَافِعِ بْنِ خَدِيجٍ: «كُنَّا نُصَلِّي المَغْرِبَ مَعَ النَّبِيِّ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ، فَيَنْصَرِفُ أَحَدُنَا وَإِنَّهُ لَيُبْصِرُ مَوَاقِعَ نَبْلِهِ»",
+        english: "Narrated Rafi' bin Khadij: 'We used to pray Maghrib with the Prophet (PBUH) and finish it at a time when one of us could see the place where his arrow would fall (it was still light).'"
+    },
+    "Jami` at-Tirmidhi 431": {
+        arabic: "عَنِ ابْنِ مَسْعُودٍ: «مَا أُحْصِي مَا سَمِعْتُ مِنْ رَسُولِ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ يَقْرَأُ فِي الرَّكْعَتَيْنِ بَعْدَ المَغْرِبِ، وَفِي الرَّكْعَتَيْنِ قَبْلَ الفَجْرِ: بِقُلْ يَا أَيُّهَا الكَافِرُونَ، وَقُلْ هُوَ اللَّهُ أَحَدٌ»",
+        english: "Ibn Mas'ud said: 'I cannot count how many times I heard the Messenger of Allah (PBUH) reciting in the two Rak'ahs after Maghrib and before Fajr: Surah Al-Kafirun and Surah Al-Ikhlas.'"
+    },
+    "Sahih al-Bukhari 764": {
+        arabic: "عَنْ جُبَيْرِ بْنِ مُطْعِمٍ: «سَمِعْتُ رَسُولَ اللَّهِ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ يَقْرَأُ فِي المَغْرِبِ بِالطُّورِ»",
+        english: "Narrated Jubair bin Mut'im: 'I heard the Messenger of Allah (PBUH) reciting Surah At-Tur in the Maghrib prayer.'"
+    },
+    "Sahih al-Bukhari 568": {
+        arabic: "عَنْ أَبِي بَرْزَةَ: «كَانَ النَّبِيُّ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ يُحِبُّ أَنْ يُؤَخِّرَ العِشَاءَ... وَكَانَ يَكْرَهُ النَّوْمَ قَبْلَهَا، وَالحَدِيثَ بَعْدَهَا»",
+        english: "Narrated Abu Barza: 'The Prophet (PBUH) liked to delay the 'Isha' prayer... and he disliked sleeping before it and talking after it.'"
+    },
+    "Sahih al-Bukhari 710": {
+        arabic: "عَنْ جَابِرٍ... «فَقَرَأَ بِالشَّمْسِ وَضُحَاهَا، وَسَبِّحِ اسْمَ رَبِّكَ الأَعْلَى»",
+        english: "Narrated Jabir... 'He recited Surah Ash-Shams and Surah Al-A'la.'"
+    },
+    "Sahih Muslim 755": {
+        arabic: "عَنْ جَابِرٍ، قَالَ: قَالَ رَسُولُ اللهِ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ: «مَنْ خَافَ أَنْ لَا يَقُومَ مِنْ آخِرِ اللَّيْلِ فَلْيُوتِرْ أَوَّلَهُ...»",
+        english: "Jabir reported: The Messenger of Allah (PBUH) said: 'Whoever fears that he will not wake up at the end of the night, let him pray Witr at the beginning of it...'"
+    },
+    "Sahih al-Bukhari 5017": {
+        arabic: "عَنْ عَائِشَةَ: «أَنَّ النَّبِيَّ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ كَانَ إِذَا أَوَى إِلَى فِرَاشِهِ كُلَّ لَيْلَةٍ جَمَعَ كَفَّيْهِ، ثُمَّ نَفَثَ فِيهِمَا فَقَرَأَ فِيهِمَا: قُلْ هُوَ اللَّهُ أَحَدٌ وَقُلْ أَعُوذُ بِرَبِّ الفَلَقِ وَقُلْ أَعُوذُ بِرَبِّ النَّاسِ، ثُمَّ يَمْسَحُ بِهِمَا مَا اسْتَطَاعَ مِنْ جَسَدِهِ...»",
+        english: "Narrated 'Aisha: 'Whenever the Prophet (PBUH) went to bed every night, he used to cup his hands together and blow over it after reciting Surah Al-Ikhlas, Al-Falaq and An-Nas, and then rub his hands over whatever parts of his body he was able to rub...'"
+    },
+    "Sahih al-Bukhari 6314": {
+        arabic: "عَنِ البَرَاءِ بْنِ عَازِبٍ: «كَانَ رَسُولُ اللَّهِ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ إِذَا أَوَى إِلَى فِرَاشِهِ نَامَ عَلَى شِقِّهِ الأَيْمَنِ»",
+        english: "Narrated Al-Bara bin 'Azib: 'When the Messenger of Allah (PBUH) went to bed, he used to sleep on his right side.'"
+    },
+    "Sahih al-Bukhari 6324": {
+        arabic: "عَنْ حُذَيْفَةَ: «بِاسْمِكَ اللَّهُمَّ أَمُوتُ وَأَحْيَا»",
+        english: "Narrated Hudhaifa: '(He would say) In Your Name, O Allah, I die and I live.'"
+    },
+    "Jami` at-Tirmidhi 3404": {
+        arabic: "عَنْ جَابِرٍ: «أَنَّ النَّبِيَّ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ كَانَ لاَ يَنَامُ حَتَّى يَقْرَأَ الم تَنْزِيلُ، وَتَبَارَكَ الَّذِي بِيَدِهِ المُلْكُ»",
+        english: "Jabir reported: 'The Prophet (PBUH) would not sleep until he recited Surah As-Sajdah and Surah Al-Mulk.'"
+    },
+    "Jami` at-Tirmidhi 2891": {
+        arabic: "عَنْ أَبِي هُرَيْرَةَ، عَنِ النَّبِيِّ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ قَالَ: «إِنَّ سُورَةً مِنَ القُرْآنِ ثَلاَثُونَ آيَةً شَفَعَتْ لِرَجُلٍ حَتَّى غُفِرَ لَهُ، وَهِيَ سُورَةُ تَبَارَكَ الَّذِي بِيَدِهِ المُلْكُ»",
+        english: "Abu Huraira reported: The Prophet (PBUH) said: 'There is a Surah in the Quran of thirty verses which interceded for a man until he was forgiven. It is Surah Tabarak alladhi biyadihi al-mulk.'"
+    },
+    "Al-Mustadrak 2/399": {
+        arabic: "عَنْ أَبِي سَعِيدٍ الْخُدْرِيِّ، قَالَ: «مَنْ قَرَأَ سُورَةَ الْكَهْفِ لَيْلَةَ الْجُمُعَةِ، أَضَاءَ لَهُ مِنَ النُّورِ فِيمَا بَيْنَهُ وَبَيْنَ الْبَيْتِ الْعَتِيقِ»",
+        english: "Abu Sa'id Al-Khudri said: 'Whoever recites Surah Al-Kahf on the night of Friday, a light will shine for him between him and the Ancient House (Ka'bah).'"
+    },
+    "Sahih Ibn Hibban 2574": {
+        arabic: "عَنْ جُنْدُبٍ، قَالَ: قَالَ رَسُولُ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ: «مَنْ قَرَأَ يس فِي لَيْلَةٍ ابْتِغَاءَ وَجْهِ اللَّهِ غُفِرَ لَهُ»",
+        english: "Jundub reported: The Messenger of Allah (PBUH) said: 'Whoever recites Yasin at night seeking the pleasure of Allah, he will be forgiven.'"
+    },
+    "Shu'ab al-Iman 2269": {
+        arabic: "عَنِ ابْنِ مَسْعُودٍ، سَمِعْتُ رَسُولَ اللهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ يَقُولُ: «مَنْ قَرَأَ سُورَةَ الْوَاقِعَةِ كُلَّ لَيْلَةٍ لَمْ تُصِبْهُ فَاقَةٌ أَبَدًا»",
+        english: "Ibn Mas'ud reported: I heard the Messenger of Allah (PBUH) say: 'Whoever recites Surah Al-Waqiah every night will never be afflicted with poverty.'"
+    },
+    "Jami` at-Tirmidhi 3575": {
+        arabic: "عَنْ عَبْدِ اللَّهِ بْنِ خُبَيْبٍ... «قُلْ هُوَ اللَّهُ أَحَدٌ وَالمُعَوِّذَتَيْنِ، حِينَ تُمْسِي وَتُصْبِحُ ثَلاَثَ مَرَّاتٍ، تَكْفِيكَ مِنْ كُلِّ شَيْءٍ»",
+        english: "Abdullah bin Khubaib reported... '(Recite) Surah Al-Ikhlas and the Mu'awwidhatayn (Falaq and Nas) three times in the evening and the morning; it will suffice you for everything.'"
+    },
+    "Sahih al-Bukhari 2311": {
+        arabic: "عَنْ أَبِي هُرَيْرَةَ... «إِذَا أَوَيْتَ إِلَى فِرَاشِكَ فَاقْرَأْ آيَةَ الكُرْسِيِّ... فَإِنَّهُ لَنْ يَزَالَ عَلَيْكَ مِنَ اللَّهِ حَافِظٌ، وَلاَ يَقْرَبُكَ شَيْطَانٌ حَتَّى تُصْبِحَ»",
+        english: "Narrated Abu Huraira... 'When you go to your bed, recite Ayat al-Kursi... for then there will be a guard from Allah who will protect you all night long, and Satan will not be able to come near you till dawn.'"
+    },
+    "Shamail 1": {
+        arabic: "عَنْ أَنَسِ بْنِ مَالِكٍ، قَالَ: «لَمْ يَكُنْ رَسُولُ اللهِ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ بِالطَّوِيلِ الْبَائِنِ، وَلَا بِالْقَصِيرِ...»",
+        english: "Anas bin Malik reported: 'The Messenger of Allah (PBUH) was not excessively tall nor short...'"
+    },
+    "Shamail 16": {
+        arabic: "عَنْ جَابِرِ بْنِ سَمُرَةَ، قَالَ: «رَأَيْتُ الْخَاتَمَ بَيْنَ كَتِفَيْ رَسُولِ اللهِ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ غُدَّةً حَمْرَاءَ مِثْلَ بَيْضَةِ الْحَمَامَةِ»",
+        english: "Jabir bin Samurah said: 'I saw the Seal between the shoulders of the Messenger of Allah (PBUH) like a red tumor, the size of a pigeon's egg.'"
+    },
+    "Shamail 24": {
+        arabic: "عَنْ أَنَسٍ، قَالَ: «كَانَ شَعْرُ رَسُولِ اللهِ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ إِلَى نِصْفِ أُذُنَيْهِ»",
+        english: "Anas said: 'The hair of the Messenger of Allah (PBUH) reached halfway to his earlobes.'"
+    },
+    "Shamail 55": {
+        arabic: "عَنْ أُمِّ سَلَمَةَ، قَالَتْ: «كَانَ أَحَبُّ الثِّيَابِ إِلَى رَسُولِ اللهِ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ الْقَمِيصَ»",
+        english: "Umm Salamah said: 'The clothing most beloved to the Messenger of Allah (PBUH) was the Qamis.'"
+    },
+    "Shamail 118": {
+        arabic: "عَنْ عَلِيٍّ، قَالَ: «إِذَا مَشَى تَكَفَّأَ تَكَفُّؤًا كَأَنَّمَا يَنْحَطُّ مِنْ صَبَبٍ»",
+        english: "Ali said: 'When he walked, he leaned forward as if descending a slope.'"
+    },
+    "Shamail 133": {
+        arabic: "عَنْ كَعْبِ بْنِ مَالِكٍ، قَالَ: «كَانَ رَسُولُ اللهِ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ يَأْكُلُ بِثَلَاثِ أَصَابِعَ وَيَلْعَقُ يَدَهُ قَبْلَ أَنْ يَمْسَحَهَا»",
+        english: "Ka'b bin Malik said: 'The Messenger of Allah (PBUH) used to eat with three fingers and would lick his hand before wiping it.'"
+    },
+    "Shamail 223": {
+        arabic: "عَنْ هِنْدِ بْنِ أَبِي هَالَةَ... «كَانَ رَسُولُ اللهِ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ مُتَوَاصِلَ الْأَحْزَانِ، دَائِمَ الْفِكْرَةِ...»",
+        english: "Hind bin Abi Halah said: 'The Messenger of Allah (PBUH) was always sorrowful, always thinking...'"
+    },
+    "Shamail 218": {
+        arabic: "عَنْ عَبْدِ اللهِ بْنِ الْحَارِثِ، قَالَ: «مَا رَأَيْتُ أَحَدًا أَكْثَرَ تَبَسُّمًا مِنْ رَسُولِ اللهِ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ»",
+        english: "Abdullah bin Al-Harith said: 'I never saw anyone smile more than the Messenger of Allah (PBUH).'"
+    },
+    "Shamail 243": {
+        arabic: "عَنْ حُذَيْفَةَ، قَالَ: «كَانَ النَّبِيُّ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ إِذَا أَوَى إِلَى فِرَاشِهِ وَضَعَ يَدَهُ تَحْتَ خَدِّهِ»",
+        english: "Hudhaifa said: 'When the Prophet (PBUH) went to bed, he would place his hand under his cheek.'"
+    },
+    "Shamail 258": {
+        arabic: "عَنْ عَائِشَةَ... «أَفَلَا أَكُونَ عَبْدًا شَكُورًا»",
+        english: "Aisha reported... 'Shall I not be a grateful slave?'"
+    }
+};

@@ -1,11 +1,15 @@
-import { propheticRoutine, shamailChapters } from './data.js';
+import { propheticRoutine, shamailChapters, commonSurahs, hadithLibrary } from './data.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     const timelineContainer = document.querySelector('.timeline-container');
     const shamailGrid = document.querySelector('.shamail-grid');
+    const surahGrid = document.querySelector('.surah-grid');
     const detailView = document.querySelector('.detail-view');
     const detailContent = document.querySelector('.detail-content');
     const closeBtn = document.querySelector('.close-detail');
+    const hadithModal = document.querySelector('#hadith-modal');
+    const hadithBody = document.querySelector('.hadith-body');
+    const closeHadithBtn = document.querySelector('.close-hadith');
     const body = document.body;
 
     // Helper to determine color class based on title/time
@@ -57,6 +61,26 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Render Surah Grid
+    if (surahGrid) {
+        commonSurahs.forEach(surah => {
+            const card = document.createElement('div');
+            card.className = 'surah-card';
+            card.innerHTML = `
+                <div class="surah-header">
+                    <h3>${surah.name}</h3>
+                    <span class="surah-time">${surah.time}</span>
+                </div>
+                <p class="surah-benefit">${surah.benefit}</p>
+                <div class="surah-hadith-ref">
+                    <i class="fas fa-book-open"></i>
+                    <span>${formatTextWithCitations('(' + surah.hadithRef + ')')}</span>
+                </div>
+            `;
+            surahGrid.appendChild(card);
+        });
+    }
+
     // Intersection Observer for Scroll Animation
     const observerOptions = {
         threshold: 0.15,
@@ -89,10 +113,23 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Helper to format citations
+    // Helper to format citations and make them clickable
     function formatTextWithCitations(text) {
-        const citationRegex = /(\((?:Sahih|Shamail|Sunan|Jami`?|Musnad|Al-Adab)[^)]+\))/g;
-        return text.replace(citationRegex, '<br><span class="citation">$1</span>');
+        // Regex to find citations in parentheses, e.g., (Sahih al-Bukhari 183)
+        const citationRegex = /\(([^)]+)\)/g;
+        return text.replace(citationRegex, (match, ref) => {
+            // Remove 'Narrated by...' or similar prefixes if present to get the key
+            // For now, we assume the text inside () matches the key or is close enough
+            // We will try to match it exactly first
+            const cleanRef = ref.trim();
+            const isLinked = hadithLibrary[cleanRef];
+
+            if (isLinked) {
+                return `<br><a href="#" class="citation-link" data-ref="${cleanRef}">(${cleanRef})</a>`;
+            } else {
+                return `<br><span class="citation">(${cleanRef})</span>`;
+            }
+        });
     }
 
     // Modal Functions
@@ -173,6 +210,19 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
             detailContent.appendChild(sourcesSection);
         }
+
+        // Re-attach event listeners for citations in the modal
+        attachCitationListeners();
+    }
+
+    function attachCitationListeners() {
+        document.querySelectorAll('.citation-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const ref = link.getAttribute('data-ref');
+                openHadithModal(ref);
+            });
+        });
     }
 
     function openModal() {
@@ -194,8 +244,39 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && detailView.classList.contains('active')) {
-            closeModal();
+        if (e.key === 'Escape') {
+            if (hadithModal.classList.contains('active')) {
+                closeHadithModal();
+            } else if (detailView.classList.contains('active')) {
+                closeModal();
+            }
         }
     });
+
+    // Hadith Modal Functions
+    function openHadithModal(ref) {
+        const hadith = hadithLibrary[ref];
+        if (!hadith) return;
+
+        hadithBody.innerHTML = `
+            <h3 style="color: var(--primary-color); margin-bottom: 1rem; border-bottom: 2px solid #eee; padding-bottom: 0.5rem;">${ref}</h3>
+            <div class="arabic-text" style="font-size: 1.8rem; margin-bottom: 1.5rem; line-height: 2;">${hadith.arabic}</div>
+            <div class="english-text" style="font-size: 1.1rem; line-height: 1.6; color: var(--text-main);">${hadith.english}</div>
+        `;
+        hadithModal.classList.remove('hidden');
+        setTimeout(() => hadithModal.classList.add('active'), 10); // Small delay for transition
+    }
+
+    function closeHadithModal() {
+        hadithModal.classList.remove('active');
+        setTimeout(() => hadithModal.classList.add('hidden'), 300); // Wait for transition
+    }
+
+    closeHadithBtn.addEventListener('click', closeHadithModal);
+    hadithModal.addEventListener('click', (e) => {
+        if (e.target === hadithModal) closeHadithModal();
+    });
+
+    // Initial attachment for static content (if any)
+    attachCitationListeners();
 });
