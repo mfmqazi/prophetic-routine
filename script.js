@@ -1,9 +1,10 @@
-import { propheticRoutine, shamailChapters, commonSurahs, hadithLibrary } from './data.js';
+import { propheticRoutine, shamailChapters, commonSurahs, ramadanRoutine, hadithLibrary } from './data.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     const timelineContainer = document.querySelector('.timeline-container');
     const shamailGrid = document.querySelector('.shamail-grid');
     const surahGrid = document.querySelector('.surah-grid');
+    const ramadanGrid = document.querySelector('.ramadan-grid');
     const detailView = document.querySelector('.detail-view');
     const detailContent = document.querySelector('.detail-content');
     const closeBtn = document.querySelector('.close-detail');
@@ -27,22 +28,24 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Render Timeline
-    propheticRoutine.forEach((item, index) => {
-        const timelineItem = document.createElement('div');
-        timelineItem.classList.add('timeline-item');
-        timelineItem.classList.add(getItemClass(item)); // Add dynamic color class
+    if (timelineContainer) {
+        propheticRoutine.forEach((item, index) => {
+            const timelineItem = document.createElement('div');
+            timelineItem.classList.add('timeline-item');
+            timelineItem.classList.add(getItemClass(item)); // Add dynamic color class
 
-        timelineItem.innerHTML = `
-            <div class="timeline-dot"></div>
-            <div class="timeline-content" data-id="${item.id}">
-                <span class="time-badge">${item.time}</span>
-                <h3 class="timeline-title">${item.title}</h3>
-                <p class="timeline-preview">${item.preview}</p>
-            </div>
-        `;
+            timelineItem.innerHTML = `
+                <div class="timeline-dot"></div>
+                <div class="timeline-content" data-id="${item.id}">
+                    <span class="time-badge">${item.time}</span>
+                    <h3 class="timeline-title">${item.title}</h3>
+                    <p class="timeline-preview">${item.preview}</p>
+                </div>
+            `;
 
-        timelineContainer.appendChild(timelineItem);
-    });
+            timelineContainer.appendChild(timelineItem);
+        });
+    }
 
     // Render Shamail Grid
     if (shamailGrid) {
@@ -78,6 +81,28 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
             `;
             surahGrid.appendChild(card);
+        });
+    }
+
+    // Render Ramadan Grid
+    if (ramadanGrid) {
+        ramadanRoutine.forEach(item => {
+            const card = document.createElement('div');
+            card.className = 'ramadan-card';
+            card.innerHTML = `
+                <div class="ramadan-icon">
+                    <i class="fas fa-moon"></i>
+                </div>
+                <h3>${item.title}</h3>
+                <p class="ramadan-summary">${item.summary}</p>
+                <div class="ramadan-details">
+                    <p>${formatTextWithCitations(item.details)}</p>
+                </div>
+                <div class="ramadan-ref">
+                    <span>${formatTextWithCitations('(' + item.hadithRef + ')')}</span>
+                </div>
+            `;
+            ramadanGrid.appendChild(card);
         });
     }
 

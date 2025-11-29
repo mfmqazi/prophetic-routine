@@ -309,6 +309,44 @@ export const commonSurahs = [
     }
 ];
 
+export const ramadanRoutine = [
+    {
+        id: "suhoor",
+        title: "Suhoor (Pre-Dawn Meal)",
+        summary: "The Prophet (PBUH) strongly encouraged taking Suhoor, even if it is just a sip of water. He would delay it until close to Fajr.",
+        hadithRef: "Sahih al-Bukhari 1923",
+        details: "He said: 'Take Suhoor as there is a blessing in it.' He would often eat dates for Suhoor."
+    },
+    {
+        id: "generosity",
+        title: "Generosity & Quran",
+        summary: "He was the most generous of people, and even more so in Ramadan when Jibril would meet him every night to review the Quran.",
+        hadithRef: "Sahih al-Bukhari 6",
+        details: "He was more generous in doing good than the blowing wind."
+    },
+    {
+        id: "iftar",
+        title: "Iftar (Breaking Fast)",
+        summary: "He would hasten to break the fast immediately after sunset, before praying Maghrib. He preferred fresh dates, or dried dates, or water.",
+        hadithRef: "Sunan Abi Dawud 2355",
+        details: "He said: 'The people will remain on the right path as long as they hasten the breaking of the fast.' (Sahih al-Bukhari 1957)"
+    },
+    {
+        id: "night-prayer",
+        title: "Night Prayers (Qiyam)",
+        summary: "He encouraged standing in prayer at night. He prayed 11 Rak'ahs (including Witr) with long recitations.",
+        hadithRef: "Sahih al-Bukhari 37",
+        details: "He said: 'Whoever prays during the night of Ramadan with faith and seeking his reward from Allah will have his past sins forgiven.'"
+    },
+    {
+        id: "last-ten",
+        title: "The Last Ten Nights",
+        summary: "He would strive hard in worship during the last ten nights more than any other time. He would stay awake at night and wake his family.",
+        hadithRef: "Sahih al-Bukhari 2024",
+        details: "He would perform I'tikaf (seclusion in the Masjid) during these days to seek Laylatul Qadr."
+    }
+];
+
 export const hadithLibrary = {
     "Sahih al-Bukhari 183": {
         arabic: "عَنِ ابْنِ عَبَّاسٍ رَضِيَ اللَّهُ عَنْهُمَا، قَالَ: بِتُّ عِنْدَ خَالَتِي مَيْمُونَةَ... فَاسْتَيْقَظَ رَسُولُ اللَّهِ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ، فَجَلَسَ يَمْسَحُ النَّوْمَ عَنْ وَجْهِهِ بِيَدِهِ، ثُمَّ قَرَأَ الْعَشْرَ الْآيَاتِ الْخَوَاتِمَ مِنْ سُورَةِ آلِ عِمْرَانَ...",
@@ -529,5 +567,29 @@ export const hadithLibrary = {
     "Shamail 258": {
         arabic: "عَنْ عَائِشَةَ... «أَفَلَا أَكُونَ عَبْدًا شَكُورًا»",
         english: "Aisha reported... 'Shall I not be a grateful slave?'"
+    },
+    "Sahih al-Bukhari 1923": {
+        arabic: "عَنْ أَنَسِ بْنِ مَالِكٍ رَضِيَ اللَّهُ عَنْهُ قَالَ قَالَ النَّبِيُّ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ تَسَحَّرُوا فَإِنَّ فِي السَّحُورِ بَرَكَةً",
+        english: "Narrated Anas bin Malik: The Prophet (PBUH) said, 'Take Suhoor as there is a blessing in it.'"
+    },
+    "Sahih al-Bukhari 6": {
+        arabic: "عَنِ ابْنِ عَبَّاسٍ، قَالَ: «كَانَ رَسُولُ اللَّهِ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ أَجْوَدَ النَّاسِ، وَكَانَ أَجْوَدُ مَا يَكُونُ فِي رَمَضَانَ حِينَ يَلْقَاهُ جِبْرِيلُ...»",
+        english: "Narrated Ibn 'Abbas: 'The Messenger of Allah (PBUH) was the most generous of all the people, and he used to reach the peak in generosity in the month of Ramadan when Gabriel met him...'"
+    },
+    "Sunan Abi Dawud 2355": {
+        arabic: "عَنْ أَنَسِ بْنِ مَالِكٍ، قَالَ: «كَانَ رَسُولُ اللَّهِ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ يُفْطِرُ عَلَى رُطَبَاتٍ قَبْلَ أَنْ يُصَلِّيَ...»",
+        english: "Anas bin Malik said: 'The Messenger of Allah (PBUH) used to break his fast before praying with some fresh dates...'"
+    },
+    "Sahih al-Bukhari 1957": {
+        arabic: "عَنْ سَهْلِ بْنِ سَعْدٍ: «لاَ يَزَالُ النَّاسُ بِخَيْرٍ مَا عَجَّلُوا الفِطْرَ»",
+        english: "Narrated Sahl bin Sa'd: 'The people will remain on the right path as long as they hasten the breaking of the fast.'"
+    },
+    "Sahih al-Bukhari 37": {
+        arabic: "عَنْ أَبِي هُرَيْرَةَ: «مَنْ قَامَ رَمَضَانَ إِيمَانًا وَاحْتِسَابًا، غُفِرَ لَهُ مَا تَقَدَّمَ مِنْ ذَنْبِهِ»",
+        english: "Narrated Abu Huraira: 'Whoever prays during the night of Ramadan with faith and seeking his reward from Allah will have his past sins forgiven.'"
+    },
+    "Sahih al-Bukhari 2024": {
+        arabic: "عَنْ عَائِشَةَ رَضِيَ اللَّهُ عَنْهَا، قَالَتْ: «كَانَ النَّبِيُّ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ إِذَا دَخَلَ العَشْرُ شَدَّ مِئْزَرَهُ، وَأَحْيَا لَيْلَهُ، وَأَيْقَظَ أَهْلَهُ»",
+        english: "Narrated 'Aisha: 'With the start of the last ten days of Ramadan, the Prophet (PBUH) used to tighten his waist belt (i.e. work hard) and used to pray all the night, and used to keep his family awake for the prayers.'"
     }
 };

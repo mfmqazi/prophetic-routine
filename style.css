@@ -818,17 +818,95 @@ h4 {
     border: none;
     width: 35px;
     height: 35px;
-    border-radius: 50%;
-    color: var(--text-muted);
-    font-size: 1rem;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .close-hadith:hover {
     background: var(--color-duha);
     color: white;
+}
+
+/* Ramadan Section */
+.ramadan-section {
+    padding: 6rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ramadan-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.ramadan-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.ramadan-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(90deg, var(--color-maghrib), var(--color-isha));
+}
+
+.ramadan-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.ramadan-icon {
+    width: 50px;
+    height: 50px;
+    background: rgba(102, 126, 234, 0.1);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    color: var(--color-isha);
+    font-size: 1.5rem;
+}
+
+.ramadan-card h3 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.ramadan-summary {
+    color: var(--text-main);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+.ramadan-details {
+    color: var(--text-muted);
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+    border-left: 3px solid rgba(0, 0, 0, 0.1);
+    padding-left: 1rem;
+}
+
+.ramadan-ref {
+    margin-top: auto;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    text-align: right;
 }
