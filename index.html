@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Day in the Life of Prophet Muhammad (PBUH)</title>
+    <meta name="description"
+        content="Experience a typical day in the life of Prophet Muhammad (PBUH), from waking up to sleeping, with minute details of his routine and adhkars.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <header class="hero-section">
+            <nav class="glass-nav">
+                <div class="logo">The Prophetic Routine</div>
+                <div class="nav-links">
+                    <a href="#timeline">Timeline</a>
+                    <a href="#shamail">Shamail-e-Tirmidhi</a>
+                    <a href="#about">About</a>
+                </div>
+            </nav>
+            <div class="hero-content">
+                <h1 class="fade-in-up">A Day in the Life of <br><span class="highlight">The Prophet Muhammad
+                        (PBUH)</span></h1>
+                <p class="subtitle fade-in-up delay-1">Walk in the footsteps of the best of creation. Discover the
+                    minute details of his daily routine, prayers, and habits.</p>
+                <a href="#timeline" class="cta-button fade-in-up delay-2">Start the Journey</a>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+            </div>
+        </header>
+
+        <main id="timeline" class="timeline-section">
+            <div class="section-header">
+                <h2>The Daily Timeline</h2>
+                <p>Select a time of day to explore</p>
+            </div>
+
+            <div class="timeline-container">
+                <!-- Timeline items will be injected here by JS -->
+                <div class="timeline-line"></div>
+            </div>
+        </main>
+
+        <section id="shamail" class="shamail-section">
+            <div class="section-header">
+                <h2>Shamail-e-Tirmidhi</h2>
+                <p>The Sublime Qualities & Habits of the Prophet (PBUH)</p>
+            </div>
+            <div class="shamail-grid">
+                <!-- Shamail items injected by JS -->
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="about-content">
+                <h2>About This Project</h2>
+                <p>This website is dedicated to reviving the Sunnah by presenting the daily life of Prophet Muhammad
+                    (PBUH) in an accessible and beautiful format.</p>
+                <p>All information is derived from authentic Sunni sources, primarily <strong>Sahih al-Bukhari</strong>,
+                    <strong>Sahih Muslim</strong>, and <strong>Al-Shamail Al-Muhammadiyyah</strong> by Imam Tirmidhi.
+                </p>
+                <p>Our goal is to help Muslims connect with their Prophet (PBUH) by knowing his schedule, his habits,
+                    and his noble character.</p>
+            </div>
+        </section>
+
+        <section id="details" class="detail-view hidden">
+            <button class="close-detail"><i class="fas fa-times"></i></button>
+            <div class="detail-content">
+                <!-- Dynamic content -->
+            </div>
+        </section>
+
+        <footer>
+            <p>Created with ❤️ to honor the Sunnah.</p>
+        </footer>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
