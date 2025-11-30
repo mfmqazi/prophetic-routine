@@ -64,6 +64,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p>${chapter.hadith}</p>
                 </div>
             `;
+            // Add click listener
+            card.style.cursor = 'pointer';
+            card.addEventListener('click', () => {
+                populateShamailModal(chapter);
+                openModal();
+            });
             shamailGrid.appendChild(card);
         });
 
@@ -88,6 +94,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p>${chapter.hadith}</p>
                 </div>
             `;
+            // Add click listener
+            card.style.cursor = 'pointer';
+            card.addEventListener('click', () => {
+                populateShamailModal(chapter);
+                openModal();
+            });
             shamailFullGrid.appendChild(card);
         });
     }
@@ -183,6 +195,68 @@ document.addEventListener('DOMContentLoaded', () => {
                 return `<br><span class="citation">(${cleanRef})</span>`;
             }
         });
+    }
+
+    function populateShamailModal(data) {
+        detailContent.innerHTML = '';
+
+        // Header
+        const header = document.createElement('div');
+        header.className = 'detail-header section-header';
+        header.style.marginBottom = '2rem';
+        header.innerHTML = `
+            <span class="time-badge" style="background:var(--color-isha); color:white;">Shamail</span>
+            <h2 style="color: var(--text-main); margin-top:1rem;">${data.title}</h2>
+            <p class="subtitle" style="margin-bottom: 0; color: var(--text-muted); font-size: 1.1rem; line-height: 1.6;">${data.details.intro}</p>
+        `;
+        detailContent.appendChild(header);
+
+        // Key Points
+        if (data.details.keyPoints && data.details.keyPoints.length > 0) {
+            const keyPointsSection = document.createElement('div');
+            keyPointsSection.className = 'detail-section';
+            keyPointsSection.innerHTML = `
+                <h3><i class="fas fa-list-ul"></i> Key Points</h3>
+                <ul style="list-style: none; padding: 0;">
+                    ${data.details.keyPoints.map(point => `
+                        <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative; font-size: 1.1rem;">
+                            <span style="position: absolute; left: 0; top: 10px; width: 6px; height: 6px; background: var(--color-maghrib); border-radius: 50%;"></span>
+                            ${point}
+                        </li>
+                    `).join('')}
+                </ul>
+            `;
+            detailContent.appendChild(keyPointsSection);
+        }
+
+        // Hadith
+        const hadithSection = document.createElement('div');
+        hadithSection.className = 'detail-section';
+        hadithSection.innerHTML = `
+            <h3><i class="fas fa-quote-right"></i> Narration</h3>
+            <div class="hadith-quote">
+                <p style="font-size: 1.1rem; line-height: 1.8;">${data.hadith}</p>
+            </div>
+        `;
+        detailContent.appendChild(hadithSection);
+
+        // Reflections
+        if (data.details.reflections && data.details.reflections.length > 0) {
+            const reflectionSection = document.createElement('div');
+            reflectionSection.className = 'detail-section';
+            reflectionSection.innerHTML = `
+                <h3><i class="fas fa-lightbulb"></i> Reflections</h3>
+                <ul style="list-style: none; padding: 0;">
+                    ${data.details.reflections.map(ref => `
+                        <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative; font-size: 1.1rem; font-style: italic; color: var(--text-muted);">
+                            <i class="fas fa-star" style="position: absolute; left: 0; top: 5px; font-size: 0.7rem; color: var(--color-duha);"></i>
+                            ${ref}
+                        </li>
+                    `).join('')}
+                </ul>
+            `;
+            detailContent.appendChild(reflectionSection);
+        }
     }
 
     // Modal Functions
