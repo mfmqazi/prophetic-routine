@@ -1,8 +1,10 @@
 import { propheticRoutine, shamailChapters, commonSurahs, ramadanRoutine, hadithLibrary } from './data.js';
+import { shamailFullChapters } from './shamail_data.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     const timelineContainer = document.querySelector('.timeline-container');
     const shamailGrid = document.querySelector('.shamail-grid');
+    const shamailFullGrid = document.querySelector('.shamail-full-grid');
     const surahGrid = document.querySelector('.surah-grid');
     const ramadanGrid = document.querySelector('.ramadan-grid');
     const detailView = document.querySelector('.detail-view');
@@ -47,9 +49,11 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Render Shamail Grid
+    // Render Shamail Grid (Preview on Home)
     if (shamailGrid) {
-        shamailChapters.forEach(chapter => {
+        // Show only first 6 chapters
+        const previewChapters = shamailChapters.slice(0, 6);
+        previewChapters.forEach(chapter => {
             const card = document.createElement('div');
             card.className = 'shamail-card';
             card.innerHTML = `
@@ -61,6 +65,30 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
             `;
             shamailGrid.appendChild(card);
+        });
+
+        // Add "View All" button container
+        const btnContainer = document.createElement('div');
+        btnContainer.className = 'view-all-btn-container';
+        btnContainer.style.gridColumn = '1 / -1';
+        btnContainer.innerHTML = `<a href="shamail.html" class="cta-button">View All Chapters</a>`;
+        shamailGrid.appendChild(btnContainer);
+    }
+
+    // Render Full Shamail Grid (Shamail Page)
+    if (shamailFullGrid) {
+        shamailFullChapters.forEach(chapter => {
+            const card = document.createElement('div');
+            card.className = 'shamail-card';
+            card.innerHTML = `
+                <h3>${chapter.title}</h3>
+                <p>${chapter.summary}</p>
+                <div class="shamail-hadith">
+                    <i class="fas fa-quote-left"></i>
+                    <p>${chapter.hadith}</p>
+                </div>
+            `;
+            shamailFullGrid.appendChild(card);
         });
     }
 
